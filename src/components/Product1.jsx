@@ -2,9 +2,9 @@ import React from "react";
 
 const Product1 = () => {
   return (
-    <div className="container py-5">
+    <div className="container mx-auto py-5" style={{maxWidth:"860px"}}>
       <h1 className="text-center text-primary mb-4">
-        AHEM-Adjustable Height Assistive Technology for Wheelchairs
+        AHAM-Adjustable Height Assistive Technology for Wheelchairs
       </h1>
       <p className="mt-5">
         This is an initiative undertaken by students of the School of
@@ -21,7 +21,7 @@ const Product1 = () => {
       </p>
 
       <p>
-        This project, “Aham-Adjustable Height Assistive Technology for
+        This project, AHAM-Adjustable Height Assistive Technology for
         wheelchairs”, is a patentable innovation designed to improve mobility,
         comfort, and safety of wheelchair users. We are in the process of
         applying for a patent to protect our intellectual property rights and
@@ -30,7 +30,6 @@ const Product1 = () => {
         transform elderly and disabled care.
       </p>
 
-      
       <h3 className="text-primary my-3">Theoretical Material</h3>
       <p>
         The core idea behind our solution is to provide wheelchair users with an
@@ -120,16 +119,15 @@ const Product1 = () => {
 
       <h3 className="text-primary my-3">System Design and Prototype</h3>
       <p>
-        The prototype of our design is currently being tested. Below is an image
+        The prototype of our design is currently being tested. Below is a demo
         of our current system design, showcasing the integration of actuators,
         sensors, and the result.
       </p>
       <div className="text-center">
-        <img
-          src="/images/img5.png"
-          alt="System Prototype"
-          className="img-fluid rounded"
-        />
+        <video controls className="img-fluid rounded">
+          <source src="\images\demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );

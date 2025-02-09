@@ -36,7 +36,7 @@ export const Navbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to={'/product-ahem'}>Wheelchair Height Adjustability (Ahem) </Link>
+                  <Link className="dropdown-item" to={'/product-ahem'}>Wheelchair Height Adjustability (AHAM) </Link>
                 </li>
               </ul>
             </li>

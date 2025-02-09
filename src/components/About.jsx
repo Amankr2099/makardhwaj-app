@@ -2,17 +2,12 @@ const About = () => {
   const teamMembers = [
     {
       name: "Sarthak Arya",
-      role: "Product Researcher",
+      role: "Head of Research and Innovation",
       img: "/images/sr_img.jpg",
     },
     {
       name: "Aman Kumar",
       role: "Web Developer",
-      img: "https://www.shareicon.net/data/2016/07/05/791214_man_512x512.png",
-    },
-    {
-      name: "Aditya Singh",
-      role: "UI Designer",
       img: "https://www.shareicon.net/data/2016/07/05/791214_man_512x512.png",
     },
   ];
@@ -43,7 +38,7 @@ const About = () => {
       </p> */}
 
       <h2 className="text-center my-5">Our Team</h2>
-      <div className="d-flex flex-wrap gap-5 justify-content-center">
+      <div className="d-flex flex-wrap gap-5 justify-content-between">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center">
             <img
@@ -53,7 +48,7 @@ const About = () => {
               style={{ width: "150px", height: "150px", borderRadius: "50%" }}
             />
             <p className="fw-semibold">{member.name}</p>
-            <p>{member.role}</p>
+            <p >{member.role}</p>
           </div>
         ))}
       </div>
