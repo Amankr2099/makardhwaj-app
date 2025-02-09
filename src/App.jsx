@@ -15,7 +15,7 @@ export const App = () => {
     createRoutesFromElements(
       <Route path='/' element={<Layout/>}>
         <Route path='' element={<Home/>} />
-        <Route path="/product-ahem" element={<Product1 />} />
+        <Route path="/product-aham" element={<Product1 />} />
         <Route path='/login' element={<Login/>} />
       </Route>
     )

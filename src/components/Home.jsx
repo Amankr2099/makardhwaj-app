@@ -43,7 +43,7 @@ const Home = () => {
         <div className="container" style={{maxWidth:"770px"}}>
           <h2 className="text-primary">Our Products</h2>
           <p>
-            We provide <Link to="/product-ahem">AHAM</Link> -an adjustable height wheelchair attachment, featuring
+            We provide <Link to="/product-aham" onClick={()=>window.scrollTo(0,0)}>AHAM</Link> -an adjustable height wheelchair attachment, featuring
             electric actuators that allow effortless seat height adjustment.
             This innovation enhances accessibility, enabling users to reach
             higher surfaces, ease transfers, etc. designed to improve mobility

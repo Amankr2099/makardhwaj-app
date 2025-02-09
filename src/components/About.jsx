@@ -38,7 +38,7 @@ const About = () => {
       </p> */}
 
       <h2 className="text-center my-5">Our Team</h2>
-      <div className="d-flex flex-wrap gap-5 justify-content-between">
+      <div className="d-flex flex-wrap gap-5 justify-content-around">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center">
             <img
