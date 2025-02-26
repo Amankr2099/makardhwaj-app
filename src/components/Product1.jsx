@@ -22,7 +22,7 @@ const Product1 = () => {
 
       <p>
         This project, AHAM-Adjustable Height Assistive Technology for
-        wheelchairs”, is a patentable innovation designed to improve mobility,
+        wheelchairs, is a patentable innovation designed to improve mobility,
         comfort, and safety of wheelchair users. We are in the process of
         applying for a patent to protect our intellectual property rights and
         ensure that this initiative reaches those who need it the most. Our

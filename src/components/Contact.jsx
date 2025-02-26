@@ -1,4 +1,31 @@
+import { useState } from "react";
+
 export const  Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key",import.meta.env.VITE_MAIL_SERVICE_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Message Send Successfully");
+      event.target.reset();
+    } else {
+      alert("Unable to send email at current moment");
+      setResult(data.message);
+    }
+  };
+
     return (
       <section className="bg-secondary text-white border border-secondary  mt-5 pt-5 px-5" id="contact-us" >
         <div className="mx-auto" style={{maxWidth:"870px"}}>
@@ -11,7 +38,7 @@ export const  Contact = () => {
     <div className="col-md-8  mt-5 mt-md-0">
       <div className="border border-secondary rounded p-4">
         <h3>Get in Touch</h3>
-        <form>
+        <form onSubmit={onSubmit}>
           <div className="form-group p-3">
             <label htmlFor="name">Name</label>
             <input type="text" className="form-control" id="name" name="name" required />
